@@ -1,0 +1,23 @@
+{
+  "name": "comunidadecostatec",
+  "version": "1.0.0",
+  "description": "Projeto para interação entre clientes da costatec",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VitorCostaTI/ComunidadeCostaTec.git"
+  },
+  "keywords": [
+    "CostaTec",
+    "community"
+  ],
+  "author": "VitorCostaTI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VitorCostaTI/ComunidadeCostaTec/issues"
+  },
+  "homepage": "https://github.com/VitorCostaTI/ComunidadeCostaTec#readme"
+}
