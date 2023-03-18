@@ -1,8 +1,15 @@
 const express = require('express');
 const app = express();
 
+app.set('view engine', 'ejs')
+
 app.get("/", (req, res) =>{
-    res.send("Seja Bem vindo a nossa comunidade!")
+    res.render("index")
 });
+
+app.get("/comunidade", (req, res) =>{
+    res.render("community")
+});
+
 
 app.listen(8080, ()=> {console.log("App Rodando!")})
