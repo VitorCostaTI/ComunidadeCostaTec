@@ -1,6 +1,6 @@
 {
   "name": "comunidadecostatec",
-  "version": "1.0.0",
+  "version": "1.0",
   "description": "Projeto para interação entre clientes da costatec",
   "main": "index.js",
   "scripts": {
