@@ -15,6 +15,10 @@ app.get("/comunidade", (req, res) =>{
     res.render("community");
 });
 
+app.post("/save", (req, res) =>{
+    res.send("formulario recebido")
+});
+
 
 app.listen(port, () => {
 
@@ -24,7 +28,3 @@ app.listen(port, () => {
     console.log("");
 
 });
-
-/*
-
-*/
