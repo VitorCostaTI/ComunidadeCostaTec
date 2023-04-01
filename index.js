@@ -2,8 +2,14 @@ const express = require('express');
 const logo = require('./assets/js/logo');
 const app = express();
 
+const bodyParser = require('body-parser');
+
 app.set('view engine', 'ejs');
+
 app.use(express.static('assets'));
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json);
 
 var port = 8080;
 
@@ -15,8 +21,13 @@ app.get("/comunidade", (req, res) =>{
     res.render("community");
 });
 
-app.post("/save", (req, res) =>{
-    res.send("formulario recebido")
+app.post("/save-community", (req, res) => {
+
+    var name = req.body.name;
+    var subject = req.body.subject;
+    var message = req.body.message;
+
+    res.send("formulario recebido" + name + " - " + subject + " : " + message);
 });
 
 
