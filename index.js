@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 app.set('view engine', 'ejs');
 
 const connection = require('./database/database');
+const perguntaModel = require('./database/models/Comentario')
 
 connection.authenticate().then(() =>{
     console.log("Conexão realizada com sucesso")
