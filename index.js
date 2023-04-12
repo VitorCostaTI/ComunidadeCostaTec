@@ -6,6 +6,14 @@ const bodyParser = require('body-parser');
 
 app.set('view engine', 'ejs');
 
+const connection = require('./database/database');
+
+connection.authenticate().then(() =>{
+    console.log("Conexão realizada com sucesso")
+}).catch(() => {
+    console.log("Não deu certo!!")
+})
+
 app.use(express.static('assets'));
 
 app.use(bodyParser.urlencoded({ extended: true }));
